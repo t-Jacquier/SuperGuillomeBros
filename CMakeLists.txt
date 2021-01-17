@@ -6,5 +6,5 @@ project(guillome C)
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
-add_executable(guillome main.c)
+add_executable(guillome main.c librairies/event.c librairies/event.h)
 target_link_libraries(guillome ${SDL2_LIBRARIES})
