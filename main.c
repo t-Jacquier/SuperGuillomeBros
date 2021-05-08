@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "header.h"
-#include "librairies/event.h"
 #include "librairies/fonction_SDL.h"
 
 /*typedef struct
@@ -33,7 +32,6 @@
 
 int main() {
     SDL_Window *window;  // Déclaration de la fenêtre
-    SDL_Event events;
 
     if (SDL_Init(SDL_INIT_VIDEO) < 0) // Initialisation de la SDL
     {

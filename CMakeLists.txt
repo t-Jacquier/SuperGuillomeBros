@@ -7,5 +7,5 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
-add_executable(guillome main.c librairies/event.c librairies/event.h)
+add_executable(guillome main.c)
 target_link_libraries(guillome ${SDL2_LIBRARIES})

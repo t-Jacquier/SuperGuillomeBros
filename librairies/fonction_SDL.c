@@ -1,7 +1,4 @@
 #include <SDL2/SDL.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
 #include "fonction_SDL.h"
 
 SDL_Texture* charger_image (const char* nomfichier, SDL_Renderer*
@@ -22,7 +19,7 @@ SDL_Texture* charger_image_transparente(const char* nomfichier, SDL_Renderer* re
     
     Uint32 key = SDL_MapRGB(img->format, r, g, b);
     
-    int color = SDL_SetColorKey(img, SDL_TRUE, key);
+    SDL_SetColorKey(img, SDL_TRUE, key);
     return SDL_CreateTextureFromSurface(renderer, img);
     
 }

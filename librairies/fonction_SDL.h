@@ -1,5 +1,11 @@
 #include <SDL2/SDL.h>
 
+struct Coordonnes{
+    int x;
+    int y;
+};
+
+typedef struct Coordonnes Coordonnes;
 /**
  * @brief Charge une texture
  * @param nomfichier nom de l'image à charger
